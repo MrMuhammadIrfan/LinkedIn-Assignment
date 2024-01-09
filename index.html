@@ -11,14 +11,24 @@
             margin: 0;
         }
 
+        /* Navbar */
+
         .navbar {
             align-items: center;
             justify-content: space-between;
             width: 100%;
             height: 80px;
+            border-radius: 20px;
+            background-color: rgb(255, 68, 0);
             /* border: 1px solid black; */
             /* background-color: antiquewhite; */
+            /* margin: 10px 0; */
             display: flex;
+            position: fixed;
+            top: 10px;
+           
+            z-index: 1;
+
 
 
         }
@@ -28,6 +38,7 @@
             height: 85px;
             margin-left: 20px;
             /* background-color: aquamarine; */
+         
         }
 
         .list {
@@ -52,6 +63,11 @@
 
 
         }
+        .list li:hover{
+            border-bottom: 1px solid black;
+            transition: 1s;
+            cursor: pointer;
+        }
 
         .button {
 
@@ -64,6 +80,7 @@
 
             width: 70px;
             border-radius: 18px;
+            /* background-color: orangered; */
             border: none;
 
 
@@ -75,42 +92,78 @@
             font-weight: bolder;
         }
 
-        .btn {
+        .btnbb {
             width: 100px;
-            color: rgba(0, 0, 255, 0.705);
-            border: 1px solid rgba(0, 0, 255, 0.719);
+            color: white;
+            background-color: orangered;
+            font-weight: bolder;
+            border: 2px solid dodgerblue;
             padding: 10px;
 
         }
+        .btnbb:hover{
+            box-shadow: 1px 1px 1px white;
+            color: black;
+            border: 2px solid white;
+            cursor: pointer;
+        }
 
-        /* Down1 */
-        .down1{
-            width: 35%;
-            height: 700px;
+
+
+
+
+
+
+        /* Down1 Sign In  */
+        .down1 {
+
+            width: 33%;
+            height: 600px;
             /* border: 1px solid black; */
-            
+            /* position: sticky;
+            top: 200px;
+            margin: 20px; */
+
             position: absolute;
             top: 150px;
-            right: 750px;
-            
+            right: 800px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.034);
+
+
         }
-        .down1 p{
+
+        .down1:hover {
+            box-shadow: 4px 4px 20px  rgba(135, 207, 235, 0.514);
+            transform: scale(0.9);
+            transition: 0.5s;
+            border: none;
+            position: absolute;
+            top: 70px;
+            background-color: rgba(135, 207, 235, 0.514);
+            transition: 1s;
+
+        }
+
+        .down1 p {
             margin: 10px;
             font-size: 40px;
             color: orangered;
             /* font-weight: bolder; */
-           
+
         }
-        .down1 input::placeholder{
+
+        .down1 input::placeholder {
             text-align: right;
-            color:rgb(7, 125, 236);
+            color: rgb(7, 125, 236);
             font-weight: bolder;
             font-size: 20px;
-          margin-left: 10px;
-            
-            
+            margin-left: 10px;
+
+
         }
-        .down1 input{
+
+        .down1 input {
             width: 100%;
             font-size: 30px;
             padding: 8px 0;
@@ -119,41 +172,318 @@
             text-align: center;
             border: 1px solid rgba(0, 0, 0, 0.658);
         }
-        .down1 h1{
-            color:rgb(7, 125, 236);
+
+        .down1 h1 {
+            color: rgb(7, 125, 236);
             font-size: 20px;
             margin: 10px 0;
         }
-        .down1 form{
+
+        .down1 form {
             margin: 0 15px;
             position: absolute;
             top: 120px;
-           
+
         }
-        .btn1{
+
+        .btn1 {
             width: 100%;
             height: 50px;
-            background-color:rgb(7, 125, 236) ;
+            background-color: rgb(7, 125, 236);
             color: white;
             font-weight: bolder;
-        } 
-        .hr{
+        }
+
+        .hr {
             margin: 10px 0;
         }
-        hr{
+
+        hr {
             margin: 10px 0;
             width: 45%;
         }
-       #para{
-        margin: 10px 0;
-        color: black;
-        font-size: 15px;
-       }
-       #para span{
-        color:rgb(7, 125, 236) ;
-       }
-         
-      
+
+        #para {
+            margin: 10px 0;
+            color: black;
+            font-size: 15px;
+        }
+
+        #para span {
+            color: rgb(7, 125, 236);
+        }
+
+
+
+
+        /* right picture */
+        .right {
+            width: 40%;
+            height: 600px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 200px;
+            right: 0;
+            left: 800px;
+            bottom: 80px;
+            background-image: url(image/right1.svg);
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: contain;
+
+
+        }
+
+
+
+
+        /* left */
+        .left {
+            width: 30%;
+            height: 300px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 850px;
+            left: 100px;
+        }
+
+        .left p {
+            font-weight: 100;
+            font-size: 50px;
+            color: rgba(0, 0, 0, 0.637);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #minipara {
+            color: rgba(0, 0, 0, 0.747);
+            font-family: sans-serif;
+            font-size: 20px;
+            margin: 10px 5px;
+        }
+
+
+
+
+        /* left */
+        .right1 {
+            width: 50%;
+            height: 50px;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            height: 300px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 850px;
+            right: 100px;
+
+        }
+
+        .right1 button {
+
+            width: 150px;
+            height: 50px;
+
+            margin: 5px 2px;
+
+            border: 1px solid black;
+            border-radius: 20px;
+
+        }
+        .right1 button:hover{
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.712);
+            cursor: pointer;
+        }
+
+        #btn2 {
+            width: 200px;
+        }
+
+        #btn3 {
+            font-weight: bolder;
+            color: rgb(0, 132, 255);
+            border: 1px solid rgb(7, 125, 236);
+        }
+
+
+        .left2 {
+
+            width: 30%;
+            height: 150px;
+            /* border: 1px solid black; */
+            /* border: 1px solid black; */
+
+            position: absolute;
+            top: 1200px;
+            left: 100px;
+        }
+
+        .left2 h1 {
+
+            font-weight: 100;
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.795);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .right3 {
+            width: 50%;
+            height: 260px;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 1200px;
+            right: 100px;
+
+        }
+
+        .right3 button {
+            width: 150px;
+            height: 50px;
+            /* padding: 10px; */
+            margin: 5px 2px;
+
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        .right3 button:hover{
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.712);
+            cursor: pointer;
+        }
+
+
+
+
+        /* footer */
+        .footer {
+            width: 100%;
+            height: 200px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 1700px;
+            background-color: rgba(255, 68, 0, 0.342);
+
+
+
+        }
+
+        .footer p {
+            width: 28%;
+            font-size: 40px;
+            /* align-items: center; */
+            justify-content: center;
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            color: orangered;
+
+
+        }
+
+        .btn4 {
+            border: 1px solid rgb(7, 125, 236);
+            color: rgb(4, 134, 255);
+            width: 100px;
+            padding: 15px;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            font-weight: bolder;
+        }
+
+
+
+        /* message box */
+        .chat {
+            width: 30%;
+            height: 300px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            margin: 10px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            background-color: dodgerblue;
+
+        }
+
+        .chat:hover {
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.555);
+        }
+
+        .head h1 {
+            color: white;
+            padding: 15px;
+        }
+
+        .body {
+            flex: 1;
+            color: white;
+            background-color: rgb(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        .message {
+            background-color: dodgerblue;
+            padding: 10px;
+            color: white;
+            width: fit-content;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .usermessage {
+            margin-left: auto;
+            background-color: white;
+            color: black;
+        }
+
+        .footer1 form {
+            display: flex;
+        }
+
+        form input {
+
+            text-align: center;
+            background-color: rgba(208, 219, 219, 0.425);
+            flex: 1;
+            height: 23px;
+            border: none;
+            outline: none;
+            padding-left: 5px;
+            font-size: 16px;
+        }
+
+        ::-ms-input-placeholder {
+            /* Edge 12-18 */
+            color: orange;
+
+        }
+
+        ::placeholder {
+            color: black;
+            /* background-color: orangered; */
+        }
+
+
+        .bbb {
+            /* border-radius: px; */
+            background-color: dodgerblue;
+            color: white;
+            /* border-bottom-left-radius: 2px; */
+        }
+
+        .bbb:hover {
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        .place input {
+            background-color: orangered;
+        }
     </style>
 
 </head>
@@ -169,9 +499,9 @@
             <li>Learning</li>
             <li>Jobs</li>
         </ul>
-        <div class="button">
-            <input type="text" name="" id="" placeholder="Join now">
-            <button class="btn">sign In</button>
+        <div class="button place">
+            <input type="text" name="" id="plce" placeholder="Join now">
+            <button class="btnbb">Sign In</button>
         </div>
     </div>
     <div class="down1">
@@ -184,16 +514,95 @@
             <h1>Forgot password?</h1>
             <button class="btn1">Sign in</button>
             <div class="hr" style="display: flex;">
-                <hr>&nbsp;  or &nbsp; <hr>
-                
+                <hr>&nbsp; or &nbsp;
+                <hr>
+
             </div>
-            <p id="para">By clicking, you agree to LinkedIn's <span>User Agreements Privacy Policy</span> and <span>Cookie Policy</span></p>
-            <button class="btn1" style="background-color: white; color: black; border: 1px solid black; margin: 10px 0;">Continue with Google</button>
-            <button class="btn1" style="background-color: white; color: black; border: 1px solid black; margin: 5px 0;">New to LinkedIn?Join now</button>
+            <p id="para">By clicking, you agree to LinkedIn's <span>User Agreements Privacy Policy</span> and
+                <span>Cookie Policy</span>
+            </p>
+            <button class="btn1"
+                style="background-color: white; color: black; border: 1px solid black; margin: 5px 0;">Continue with
+                Google</button>
+            <button class="btn1"
+                style="background-color: white; color: black; border: 1px solid black; margin: 5px 0;">New to
+                LinkedIn?Join now</button>
         </form>
-    
+
     </div>
+    <div class="right">
+
     </div>
+    <div class="left">
+        <p>Explore collaborative articles</p>
+        <p id="minipara">We're unlocking community knowledge in a new way.Experts add insights directly into each
+            article,atarted with the help of AI.</p>
+
+
+    </div>
+    <div class="right1">
+        <button>Marketing</button>
+        <button style="width: 40%;">Public Administration</button>
+        <button>Healthcare</button>
+        <button>Engineering</button>
+        <button>IT Services</button>
+        <button>Sustainability</button>
+        <button style="width: 25%;">Business Administration</button> <br>
+        <button style="width: 30%;">Telecommunications</button>
+        <button id="btn2" style="width: 35%;">HR Management</button> <br>
+        <button id="btn3">Show all</button>
+
+    </div>
+    <div class="left2">
+        <h1>Find the right job or internship for you</h1>
+    </div>
+
+    <div class="right3">
+
+        <div>
+            <p style="color:  rgb(7, 125, 236);">SUGGESTED SEARCHES</p>
+
+
+            <button>Engineering</button>
+            <button>Business Development</button>
+            <button>Finance</button> <br>
+            <button style="width: 30%;">Administration Assistant</button>
+            <button style="width: 30%;">Real Associate</button>
+            <button>Customer Service</button> <br>
+            <button>Operations</button>
+            <button style="width: 30%;">Information Technology</button>
+            <button>Marketing</button> <br>
+            <button>Human Resources</button>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>Post your job for millions of people to see</p>
+        <button class="btn4">Post a job</button>
+    </div>
+    <div class="chat">
+        <div class="head">
+            <h1>LinkedIn Chat</h1>
+        </div>
+        <div class="body">
+            <div class="message">Hello</div>
+            <div class="message usermessage"> Hi</div>
+
+        </div>
+        <div class="footer1">
+            <form>
+                <input type="text" name="" id="" placeholder="Type here">
+                <button class="bbb">SEND</button>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+
 
 
 </body>
